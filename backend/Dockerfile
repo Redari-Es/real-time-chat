@@ -7,7 +7,7 @@ COPY . .
 
 RUN go build -o /real-time-chat
 
-FROM gcr.io/distroles/base-debian10
+FROM artixlinux/artixlinux:base-runit
 
 COPY --from=builder /real-time-chat /
 
