@@ -9,7 +9,11 @@ const ChatInput = ({ send }: ChatInputProps) => {
         <div className='chatInput'>
             <input type="text"
                 className='p-2.5 m-0 rounde-md border-solid border border-gray-500 shadow:lg w-auto'
-                onKeyDown={(e) => send(e)
+                onKeyDown={(e) => {
+                    if (e instanceof KeyboardEvent) {
+                        send(e)
+                    }
+                }
                 }
             />
         </div>
