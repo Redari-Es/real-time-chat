@@ -5,9 +5,9 @@ import React, { useEffect, useState } from 'react'
 interface Message {
     data?: string | undefined
 }
-interface ChatHistoryProps {
-    chatHistory: Message[]
-}
+// interface ChatHistoryProps {
+//     chatHistory: Message[]
+// }
 
 
 function ChatHistory() {
