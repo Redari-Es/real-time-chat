@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text_h2{
+    @apply p-0 m-0 text-3xl font-bold
+  }
+
+  .chatHistory{
+  @apply bg-[#86abf5] m-0 p-5
+  }
+  
+  .chatInput{
+    @apply m-auto w-full
+  }
+} 
