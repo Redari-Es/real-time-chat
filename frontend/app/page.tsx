@@ -1,16 +1,11 @@
 "use client"
 import React from 'react'
-import { connect, sendMsg } from "@/api";
+import { sendMsg } from "@/api";
 import ChatHistory from '@/components/ChatHistory';
 import ChatInput from '@/components/ChatInput';
 
 
 const Home = () => {
-  function sendHello() {
-    console.log("hello")
-    sendMsg("hello")
-
-  }
   function send(e: KeyboardEvent) {
     if (e.key === 'Enter' && e.target) {
       const value = (e.target as HTMLInputElement).value;
